@@ -8,10 +8,6 @@ app.use(express.json())
 
 mongoose.connect(
     "mongodb+srv://savaliyatruvisha_db_user:truvi123@truvisha.uw6gnkg.mongodb.net/Songs",
-    {
-        uerNewUrlParser:true,
-        useUnifiedTopology:true,
-    }
 )
 app.use("/song",studentRoute)
 app.listen(PORT,()=>{
