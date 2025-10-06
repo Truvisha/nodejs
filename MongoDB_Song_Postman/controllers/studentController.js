@@ -2,9 +2,9 @@ const Song=require("../models/Song")
 
 exports.index=(req,res)=>{
     Song.find()
-        .then((allSongs)=>{
-            console.log("All songs retrived succefully:",allSongs)
-            res.send({message:"Songs retrived successfully:",data:allSongs})   
+        .then((Song)=>{
+            console.log("All songs retrived succefully:",Song)
+            res.send({message:"Songs retrived successfully:",data:Song})   
         }).catch((error)=>{
             console.error("Error retrieving songs:",error)
         })

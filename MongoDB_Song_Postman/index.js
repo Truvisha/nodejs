@@ -11,5 +11,5 @@ mongoose.connect(
 )
 app.use("/song",studentRoute)
 app.listen(PORT,()=>{
-    console.log("server is running:127.0.0.1"+PORT)
+    console.log("server is running:localhost"+PORT)
 })
